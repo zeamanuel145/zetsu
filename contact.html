@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Zetsu</title>
+    <link rel="stylesheet" href="/style/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/"><span class="logo-text">zetsu</span></a>
+                    
+                </div>
+                
+                <nav class="nav">
+                    <div class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle">
+                            Solutions <span class="arrow">▼</span>
+                        </button>
+                        <div class="dropdown-menu solutions-dropdown">
+                            <div class="dropdown-card">
+                                
+                                <div class="dropdown-image">
+                                    <a href="/product.html">
+                                    <img src="/assets/images/boysit.jpg" alt="Our Products"></a>
+                                </div>
+                                <h3>Our Products</h3>
+                                <p>Scalable solutions for large organizations</p>
+                            
+                            </div>
+                            <div class="dropdown-card">
+                                
+                                <div class="dropdown-image">
+                                    <a href="/product.html">
+                                    <img src="/assets/images/boysit.jpg" alt="Featured Products"></a>
+                                </div>
+                                <h3>Featured Products</h3>
+                                <p>Our most popular digital solutions</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle">
+                            Company <span class="arrow">▼</span>
+                        </button>
+                        <div class="dropdown-menu company-dropdown">
+                            <div class="dropdown-card">
+                                
+                                <div class="dropdown-image">
+                                    <a href="/about.html">
+                                    <img src="/assets/images/boysit.jpg" alt="About Us"></a>
+                                </div>
+                                <h3>About Us</h3>
+                                <p>Our story, mission, and values</p>
+                                </a>
+                            </div>
+                            
+                            <div class="dropdown-card">
+                                
+                                <div class="dropdown-image">
+                                    <a href="/contact.html">
+                                    <img src="/assets/images/boysit.jpg" alt="Contact Us"></a>
+                                </div>
+                                <h3>Contact Us</h3>
+                                <p>Start Growing with Us!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="icon-btn cart-btn">
+                    
+                    </button>
+                    <button class="icon-btn theme-btn" id="themeToggle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sun-icon">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="moon-icon" style="display: none;">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button class="start-growing-btn">Start growing</button>
+                        <i data-lucide="robot" style="margin-left: 8px; font-size: 24px; vertical-align: middle;"></i>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="hero contact-hero">
+            <div class="container">
+                <h1>Get <span class="highlight">in Touch</span></h1>
+                <p class="hero-description">Have a question or want to work together? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>Feel free to reach out to us using any of the contact methods below.</p>
+                        
+                        <div class="contact-item">
+                            <h3>Our Location</h3>
+                            <p>Bole, Fatuma Building, 4rd floor, office 405<br>
+                            Addis Ababa, Ethiopia</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Email Us</h3>
+                            <p>Eg123@zetsu.dev</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Call Us</h3>
+                            <p>+251900000011</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gmail">Gmail Address (Optional)</label>
+                                <input type="email" id="gmail" name="gmail" placeholder="Ex@gmail.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Inquiry Type</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="inquiry" value="general">
+                                        <span>General Inquiry</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="inquiry" value="outsourcing">
+                                        <span>Outsourcing</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="inquiry" value="partnership">
+                                        <span>Partnership</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="inquiry" value="meeting">
+                                        <span>Book a Meeting</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>You are a :</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="type" value="individual">
+                                        <span>Individual</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="type" value="company">
+                                        <span>Company</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="portfolio">Portfolio/Profile Link (Optional)</label>
+                                <div class="url-input">
+                                    <select class="url-prefix">
+                                        <option value="website">website</option>
+                                        <option value="https">linkden</option>
+                                        <option value="http">twitter</option>
+                                        <option value="http">instagram</option>
+                                    </select>
+                                    <input type="text" id="portfolio" name="portfolio" placeholder="Enter your link here">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38256.67424898311!2d38.78537080257003!3d8.994469308770768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1749462109416!5m2!1sen!2set" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>zetsu</h4>
+                    <p>Empowering businesses with innovative digital solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="/product.html">Products</a></li>
+                        <li><a href="/product.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>RESOURCES</h4>
+                    <ul>
+                        <li><a href="#">OutSourcing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 zetsu. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/sec-script.js"></script>
+</body>
+</html>
