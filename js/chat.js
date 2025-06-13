@@ -228,7 +228,7 @@ async function initializePuter() {
     const statusText = document.getElementById("chatStatusText");
     
     try {
-        console.log('🚀 Starting zetsu Puter AI initialization...');
+        console.log('Starting zetsu Puter AI initialization...');
         if (statusIndicator) statusIndicator.className = 'chat-status connecting';
         if (statusText) statusText.textContent = 'Connecting to zetsu AI...';
         
@@ -348,8 +348,7 @@ zetsu AI Assistant (respond enthusiastically as zetsu's representative):`;
     }
 }
 
-// No hardcoded content responses - AI handles all contextual responses
-// Only connection error fallbacks are used
+
 
 // Chat widget functionality
 const chatToggle = document.getElementById("chatToggle");

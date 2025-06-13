@@ -14,26 +14,6 @@ themeToggle.addEventListener("click", () => {
 const savedTheme = localStorage.getItem("theme") || "light"
 body.setAttribute("data-theme", savedTheme)
 
-// Rotating Text Animation
-const textItems = document.querySelectorAll(".text-item")
-let currentIndex = 0
-
-function rotateText() {
-  textItems.forEach((item, index) => {
-    item.classList.remove("active", "prev")
-    if (index === currentIndex) {
-      item.classList.add("active")
-    } else if (index === (currentIndex - 1 + textItems.length) % textItems.length) {
-      item.classList.add("prev")
-    }
-  })
-
-  currentIndex = (currentIndex + 1) % textItems.length
-}
-
-if (textItems.length > 0) {
-  setInterval(rotateText, 3000)
-}
 
 // Dropdown Menus
 const dropdownToggles = document.querySelectorAll(".dropdown-toggle")
@@ -70,72 +50,6 @@ document.addEventListener("click", () => {
   })
 })
 
-// Chat Widget
-const chatToggle = document.getElementById("chatToggle")
-const chatContainer = document.getElementById("chatContainer")
-const chatClose = document.getElementById("chatClose")
-const floatingChatBtn = document.getElementById("floatingChatBtn")
-const messageInput = document.getElementById("messageInput")
-const sendBtn = document.getElementById("sendBtn")
-const chatMessages = document.querySelector(".chat-messages")
-
-function toggleChat() {
-  const isActive = chatContainer.classList.contains("active")
-
-  if (isActive) {
-    chatContainer.classList.remove("active")
-    floatingChatBtn.classList.remove("hidden")
-  } else {
-    chatContainer.classList.add("active")
-    floatingChatBtn.classList.add("hidden")
-  }
-}
-
-if (chatToggle) {
-  chatToggle.addEventListener("click", toggleChat)
-}
-
-if (floatingChatBtn) {
-  floatingChatBtn.addEventListener("click", toggleChat)
-}
-
-if (chatClose) {
-  chatClose.addEventListener("click", toggleChat)
-}
-
-function addMessage(message, isUser = false) {
-  const messageDiv = document.createElement("div")
-  messageDiv.className = `message ${isUser ? "user-message" : "bot-message"}`
-  messageDiv.innerHTML = `<p>${message}</p>`
-
-  chatMessages.appendChild(messageDiv)
-  chatMessages.scrollTop = chatMessages.scrollHeight
-}
-
-function sendMessage() {
-  const message = messageInput.value.trim()
-  if (message) {
-    addMessage(message, true)
-    messageInput.value = ""
-
-    // Simulate bot response
-    setTimeout(() => {
-      addMessage("Thanks for your message! We'll get back to you soon.")
-    }, 1000)
-  }
-}
-
-if (sendBtn) {
-  sendBtn.addEventListener("click", sendMessage)
-}
-
-if (messageInput) {
-  messageInput.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") {
-      sendMessage()
-    }
-  })
-}
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
