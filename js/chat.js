@@ -382,6 +382,8 @@ if (floatingChatBtn) floatingChatBtn.addEventListener("click", toggleChat);
 if (chatClose) chatClose.addEventListener("click", toggleChat);
 if (headerChatBtn) headerChatBtn.addEventListener("click", toggleChat);
 
+
+// Function to add messages to the chat
 function addMessage(message, isUser = false) {
     const messageDiv = document.createElement("div");
     messageDiv.className = `message ${isUser ? "user-message" : "bot-message"}`;
@@ -405,6 +407,7 @@ function addMessage(message, isUser = false) {
     chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
+// Function to show typing indicator
 function showTypingIndicator() {
     if (typingIndicator) {
         typingIndicator.style.display = "flex";
@@ -417,7 +420,7 @@ function hideTypingIndicator() {
         typingIndicator.style.display = "none";
     }
 }
-
+// Function to send message and handle AI response
 async function sendMessage() {
     const message = messageInput.value.trim();
     if (!message) return;
